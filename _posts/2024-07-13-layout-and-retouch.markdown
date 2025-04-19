@@ -8,5 +8,5 @@ author: "Wooseok Seo"
 authors: '<a href="https://kangyeolk.github.io/">Kangyeol Kim*</a>,<strong> Wooseok Seo* </strong>, Sehyun Nam, Bodam Kim, Suhyeon Jeong, <a href="https://www.linkedin.com/in/wcho92/">Wonwoo Cho</a>, <a href="https://sites.google.com/site/jaegulchoo/">Jaegul Choo</a>†, <a href="https://yj-yu.github.io/home/">Youngjae Yu</a>†'
 venue: "Under Review"
 arxiv: https://arxiv.org/abs/2407.09779
+bibtex: bibtex/layoutandretouch.txt
 ---
-We show how shape reconstruction with 3D Gaussians can be expanded to include differentiable optical flow, colored mesh exports and more.

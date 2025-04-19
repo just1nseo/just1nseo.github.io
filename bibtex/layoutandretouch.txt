@@ -1,0 +1,6 @@
+@article{kim2024layout,
+  title={Layout-and-Retouch: A Dual-stage Framework for Improving Diversity in Personalized Image Generation},
+  author={Kim, Kangyeol and Seo, Wooseok and Nam, Sehyun and Kim, Bodam and Jeong, Suhyeon and Cho, Wonwoo and Choo, Jaegul and Yu, Youngjae},
+  journal={arXiv preprint arXiv:2407.09779},
+  year={2024}
+}

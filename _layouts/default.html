@@ -87,7 +87,7 @@
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
               {% assign has_links = false %}
-              {% if post.arxiv or post.video or post.code or post.poster or post.slides or post.website or post.youtube %}
+              {% if post.arxiv or post.video or post.code or post.poster or post.slides or post.website or post.youtube or post.bibtex %}
                 {% assign has_links = true %}
                 {% assign last_link = "" %}
                 {% if post.youtube %}{% assign last_link = "youtube" %}{% endif %}
@@ -96,6 +96,7 @@
                 {% if post.poster %}{% assign last_link = "poster" %}{% endif %}
                 {% if post.code %}{% assign last_link = "code" %}{% endif %}
                 {% if post.video %}{% assign last_link = "video" %}{% endif %}
+                {% if post.bibtex %}{% assign last_link = "bibtex" %}{% endif %}
                 {% if post.arxiv %}{% assign last_link = "arxiv" %}{% endif %}
                 
                 {% if post.arxiv %}
@@ -119,6 +120,12 @@
                 {% if post.youtube %}
                 <a href="{{post.youtube}}">youtube</a>{% if last_link != "youtube" %} / {% endif %}
                 {% endif %}
+                {% if post.bibtex %}
+                <a href="{{post.bibtex}}">bibtex</a>{% if last_link != "bibtex" %} / {% endif %}
+                {% endif %}
+              {% endif %}
+              {% if post.paper_note %}
+              <span>{{post.paper_note}}</span>
               {% endif %}
               <p></p>
               {{ post.excerpt }}

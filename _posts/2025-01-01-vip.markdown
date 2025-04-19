@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "V.I.P. : Iterative Online Preference Distillation for \\ Efficient Video Diffusion Models"
+date:   2025-01-01 22:21:59 +00:00
+image: images/vip.jpg
+categories: research
+author: "Wooseok Seo"
+authors: '<a href="https://jiiiisoo.github.io/">Jisoo Kim</a>,<strong> Wooseok Seo </strong>, <a href="https://junwankimm.github.io/">Junwan Kim</a>, Seungho Park, Sooyeon Park, <a href="https://yj-yu.github.io/home/">Youngjae Yu</a>'
+venue: "Under Review"
+paper_note: "Paper link will be updated"
+---
