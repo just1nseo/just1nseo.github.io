@@ -13,7 +13,9 @@ authors:
   - "Suhyeon Jeong"
   - "[Wonwoo Cho](https://www.linkedin.com/in/wcho92/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=kr)"
   - "[Jaegul Choo](https://sites.google.com/site/jaegulchoo/)†"
-  - "[Youngjae Yu](https://yj-yu.github.io/home/)†"venue: "Under Review"
+  - "[Youngjae Yu](https://yj-yu.github.io/home/)†"
+venue: "Under Review"
 arxiv: https://arxiv.org/abs/2407.09779
 ---
+We show how shape reconstruction with 3D Gaussians can be expanded to include differentiable optical flow, colored mesh exports and more. 
 We show how shape reconstruction with 3D Gaussians can be expanded to include differentiable optical flow, colored mesh exports and more. 
