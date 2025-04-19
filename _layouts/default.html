@@ -18,6 +18,7 @@
   <meta name="author" content="{{ site.name }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🃏</text></svg>">
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -57,7 +58,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:240px; height:320px; border-radius:50%; object-fit:cover; display:block; margin:auto;" alt="profile photo" src="images/profile.jpg">
+              <img style="width:200px; height:250px; border-radius:50%; object-fit:cover; display:block; margin:auto;" alt="profile photo" src="images/profile.jpg">
             </td>
           </tr>
         </table>
@@ -86,47 +87,58 @@
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
-              {% assign has_links = false %}
-              {% if post.arxiv or post.video or post.code or post.poster or post.slides or post.website or post.youtube or post.bibtex %}
-                {% assign has_links = true %}
-                {% assign last_link = "" %}
-                {% if post.youtube %}{% assign last_link = "youtube" %}{% endif %}
-                {% if post.website %}{% assign last_link = "website" %}{% endif %}
-                {% if post.slides %}{% assign last_link = "slides" %}{% endif %}
-                {% if post.poster %}{% assign last_link = "poster" %}{% endif %}
-                {% if post.video %}{% assign last_link = "video" %}{% endif %}
-                {% if post.bibtex %}{% assign last_link = "bibtex" %}{% endif %}
-                {% if post.code %}{% assign last_link = "code" %}{% endif %}
-                {% if post.arxiv %}{% assign last_link = "arxiv" %}{% endif %}
+              
+              {% assign links = '' | split: '' %}
+              {% if post.arxiv %}{% assign links = links | push: 'arxiv' %}{% endif %}
+              {% if post.code %}{% assign links = links | push: 'code' %}{% endif %}
+              {% if post.bibtex %}{% assign links = links | push: 'bibtex' %}{% endif %}
+              {% if post.video %}{% assign links = links | push: 'video' %}{% endif %}
+              {% if post.poster %}{% assign links = links | push: 'poster' %}{% endif %}
+              {% if post.slides %}{% assign links = links | push: 'slides' %}{% endif %}
+              {% if post.website %}{% assign links = links | push: 'website' %}{% endif %}
+              {% if post.youtube %}{% assign links = links | push: 'youtube' %}{% endif %}
+              
+              {% for link_type in links %}
+                {% if forloop.first != true %} / {% endif %}
                 
-                {% if post.arxiv %}
-                <a href="{{post.arxiv}}">arxiv</a>{% if last_link != "arxiv" %} / {% endif %}
+                {% if link_type == 'arxiv' %}
+                <a href="{{post.arxiv}}">arxiv</a>
                 {% endif %}
-                {% if post.code %}
-                <a href="{{post.code}}">code</a>{% if last_link != "code" %} / {% endif %}
+                
+                {% if link_type == 'code' %}
+                <a href="{{post.code}}">code</a>
                 {% endif %}
-                {% if post.bibtex %}
-                <a href="{{post.bibtex}}">bibtex</a>{% if last_link != "bibtex" %} / {% endif %}
+                
+                {% if link_type == 'bibtex' %}
+                <a href="{{post.bibtex}}">bibtex</a>
                 {% endif %}
-                {% if post.video %}
-                <a href="{{post.video}}">video</a>{% if last_link != "video" %} / {% endif %}
+                
+                {% if link_type == 'video' %}
+                <a href="{{post.video}}">video</a>
                 {% endif %}
-                {% if post.poster %}
-                <a href="{{post.poster}}">poster</a>{% if last_link != "poster" %} / {% endif %}
+                
+                {% if link_type == 'poster' %}
+                <a href="{{post.poster}}">poster</a>
                 {% endif %}
-                {% if post.slides %}
-                <a href="{{post.slides}}">slides</a>{% if last_link != "slides" %} / {% endif %}
+                
+                {% if link_type == 'slides' %}
+                <a href="{{post.slides}}">slides</a>
                 {% endif %}
-                {% if post.website %}
-                <a href="{{post.website}}">website</a>{% if last_link != "website" %} / {% endif %}
+                
+                {% if link_type == 'website' %}
+                <a href="{{post.website}}">website</a>
                 {% endif %}
-                {% if post.youtube %}
-                <a href="{{post.youtube}}">youtube</a>{% if last_link != "youtube" %} / {% endif %}
+                
+                {% if link_type == 'youtube' %}
+                <a href="{{post.youtube}}">youtube</a>
                 {% endif %}
-              {% endif %}
+              {% endfor %}
+              
               {% if post.paper_note %}
-              <span>{{post.paper_note}}</span>
+                {% if links.size > 0 %} / {% endif %}
+                <span>{{post.paper_note}}</span>
               {% endif %}
+              
               <p></p>
               {{ post.excerpt }}
             </td>
