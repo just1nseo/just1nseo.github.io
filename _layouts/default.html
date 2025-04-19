@@ -86,26 +86,39 @@
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
+              {% assign has_links = false %}
+              {% if post.arxiv or post.video or post.code or post.poster or post.slides or post.website or post.youtube %}
+                {% assign has_links = true %}
+                {% assign last_link = "" %}
+                {% if post.youtube %}{% assign last_link = "youtube" %}{% endif %}
+                {% if post.website %}{% assign last_link = "website" %}{% endif %}
+                {% if post.slides %}{% assign last_link = "slides" %}{% endif %}
+                {% if post.poster %}{% assign last_link = "poster" %}{% endif %}
+                {% if post.code %}{% assign last_link = "code" %}{% endif %}
+                {% if post.video %}{% assign last_link = "video" %}{% endif %}
+                {% if post.arxiv %}{% assign last_link = "arxiv" %}{% endif %}
+                
+                {% if post.arxiv %}
+                <a href="{{post.arxiv}}">arxiv</a>{% if last_link != "arxiv" %} / {% endif %}
+                {% endif %}
+                {% if post.video %}
+                <a href="{{post.video}}">video</a>{% if last_link != "video" %} / {% endif %}
+                {% endif %}
+                {% if post.code %}
+                <a href="{{post.code}}">code</a>{% if last_link != "code" %} / {% endif %}
+                {% endif %}
+                {% if post.poster %}
+                <a href="{{post.poster}}">poster</a>{% if last_link != "poster" %} / {% endif %}
+                {% endif %}
+                {% if post.slides %}
+                <a href="{{post.slides}}">slides</a>{% if last_link != "slides" %} / {% endif %}
+                {% endif %}
+                {% if post.website %}
+                <a href="{{post.website}}">website</a>{% if last_link != "website" %} / {% endif %}
+                {% endif %}
+                {% if post.youtube %}
+                <a href="{{post.youtube}}">youtube</a>{% if last_link != "youtube" %} / {% endif %}
+                {% endif %}
               {% endif %}
               <p></p>
               {{ post.excerpt }}
