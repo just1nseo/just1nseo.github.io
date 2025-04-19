@@ -79,13 +79,9 @@
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-                <h3>{{ post.title }}</h3>
-                <br>
-                <p class="byline">
-                  {% for author in post.authors %}
-                    {{ author | markdownify }}{% unless forloop.last %}, {% endunless %}
-                  {% endfor %}
-                </p>
+              <h3>{{post.title}}</h3>
+              <br>
+              {{post.authors}}
 
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
