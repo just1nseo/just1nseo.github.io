@@ -7,5 +7,6 @@ categories: research
 author: "Wooseok Seo"
 authors: '<strong>Wooseok Seo*</strong>, <a href="https://seungjuhan.me/">Seungju Han*</a>, <a href="https://jaehunjung.com/">Jaehun Jung</a>, <a href="https://bnewm0609.github.io/">Benjamin Newman</a>, <a href="https://sngwonlim.github.io/">Seungwon Lim</a>, <a href="https://seunbite.github.io/">Seungbeen Lee</a>, <a href="https://gloriaximinglu.github.io/">Ximing Lu</a>, <a href="https://yejinc.github.io/">Yejin Choi</a>, <a href="https://yj-yu.github.io/home/">Youngjae Yu</a>'
 venue: "Under Review"
-paper_note: "Paper link will be updated"
+arxiv: https://arxiv.org/abs/2506.13342
+code: https://github.com/just1nseo/verifying-the-verifiers#
 ---
