@@ -9,4 +9,5 @@ authors: '<strong>Wooseok Seo*</strong>, <a href="https://seungjuhan.me/">Seungj
 venue: "Under Review"
 arxiv: https://arxiv.org/abs/2506.13342
 code: https://github.com/just1nseo/verifying-the-verifiers#
+bibtex: bibtex/fvbench.txt
 ---

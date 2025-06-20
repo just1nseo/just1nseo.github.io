@@ -1,0 +1,6 @@
+@article{seo2025verifying,
+  title={Verifying the Verifiers: Unveiling Pitfalls and Potentials in Fact Verifiers},
+  author={Seo, Wooseok and Han, Seungju and Jung, Jaehun and Newman, Benjamin and Lim, Seungwon and Lee, Seungbeen and Lu, Ximing and Choi, Yejin and Yu, Youngjae},
+  journal={arXiv preprint arXiv:2506.13342},
+  year={2025}
+}
