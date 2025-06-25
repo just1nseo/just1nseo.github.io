@@ -102,29 +102,28 @@ span.highlight {
 /* News section styles */
 .news-table {
   width: 100%;
-  border: 0px;
-  border-spacing: 0px;
-  border-collapse: separate;
-  margin-right: auto;
+  max-width: 800px;
+  border-collapse: collapse;
+  table-layout: fixed;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .news-table td {
-  padding: 8px 2.5%;
+  padding: 4px 15px;
   vertical-align: top;
-  border-bottom: 1px solid #f0f0f0;
+  text-align: left;
 }
 
 .date-badge {
-  background-color: #e8e8e8;
-  color: #666;
-  padding: 3px 8px;
-  border-radius: 2px;
-  font-size: 12px;
-  font-weight: normal;
-  margin-right: 10px;
-  white-space: nowrap;
+  background-color: #dddddd;
+  color: #5f5d5d;
+  padding: 3px 7px;
+  font-weight: bold;
+  border-radius: 4px;
   display: inline-block;
+  margin-right: 7px;
+  white-space: nowrap;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
