@@ -99,6 +99,34 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+/* News section styles */
+.news-table {
+  width: 100%;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.news-table td {
+  padding: 8px 2.5%;
+  vertical-align: top;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.date-badge {
+  background-color: #1772d0;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";
