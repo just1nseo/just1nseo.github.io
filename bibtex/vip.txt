@@ -1,0 +1,6 @@
+@article{kim2025vip,
+  title={VIP: Iterative Online Preference Distillation for Efficient Video Diffusion Models},
+  author={Kim, Jisoo and Seo, Wooseok and Kim, Junwan and Park, Seungho and Park, Sooyeon and Yu, Youngjae},
+  journal={arXiv preprint arXiv:2508.03254},
+  year={2025}
+}
