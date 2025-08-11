@@ -116,7 +116,12 @@
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
-              
+
+              {% if post.summary %}
+              <span class="paper-summary">{{ post.summary }}</span>
+              <br>
+              {% endif %}
+
               {% assign links = '' | split: '' %}
               {% if post.arxiv %}{% assign links = links | push: 'arxiv' %}{% endif %}
               {% if post.code %}{% assign links = links | push: 'code' %}{% endif %}

@@ -7,6 +7,7 @@ categories: research
 author: "Wooseok Seo"
 authors: '<a href="https://jiiiisoo.github.io/">Jisoo Kim</a>, <strong>Wooseok Seo</strong>, <a href="https://junwankimm.github.io/">Junwan Kim</a>, Seungho Park, Sooyeon Park, <a href="https://yj-yu.github.io/home/">Youngjae Yu</a>'
 venue: "ICCV"
+summary: "We integrate DPO and SFT loss for distillation to build an efficient video diffusion model, with an automatic pair curation pipeline and outperform the teacher only with the synthetic data generated from the teacher itself."
 arxiv: https://arxiv.org/abs/2508.03254
 bibtex: bibtex/vip.txt
 ---
