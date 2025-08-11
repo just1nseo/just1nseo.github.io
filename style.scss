@@ -102,15 +102,15 @@ span.highlight {
 /* News section styles */
 .news-table {
   width: 100%;
-  max-width: 800px;
+  max-width: none;
   border-collapse: collapse;
   table-layout: fixed;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 .news-table td {
-  padding: 4px 15px;
+  padding: 4px 0;
   vertical-align: top;
   text-align: left;
 }
