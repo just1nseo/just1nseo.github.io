@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "K-EXAONE Technical Report"
+date:   2026-01-07 22:21:59 +00:00
+image: images/KEXAONE.png
+categories: research
+author: "Wooseok Seo"
+authors: 'LG AI Research'
+venue: "Technical Report"
+summary: "We present K-EXAONE-236B-A23B, the best model in Korea. I contribute as a member of the post-training team, specifically working on synthetic data for reasoning."
+arxiv: https://arxiv.org/abs/2601.01739
+code: https://huggingface.co/LGAI-EXAONE/K-EXAONE-236B-A23B
+---
