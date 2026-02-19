@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
@@ -8,13 +7,11 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-E00L9PT3V9');
   </script>
+
   <title>{{ site.name }}</title>
-
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-
   <meta name="author" content="{{ site.name }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,290 +19,251 @@
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
 </head>
 
 <body>
-  <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
-              <h1>
-                Wooseok Seo
-              </h1>
-              <p>Hi! I am a 1st year Graduate student at <a href="https://www.yonsei.ac.kr/en_sc/">Yonsei University</a>, and a visiting researcher at <a href="https://pi.snu.ac.kr/">PILAB</a>, <a href="https://cse.snu.ac.kr/en">Seoul National University</a>. I am fortunate to be advised by Prof. <a href="https://scholar.google.com/citations?user=WDO24ZYAAAAJ&hl=ko">Youngjae Yu</a>.
-              </p>
+  <table class="page">
+    <tr>
+      <td>
+
+        <!-- ===================== Header ===================== -->
+        <table class="header">
+          <tr>
+            <td class="header-text">
+              <h1>Wooseok Seo</h1>
+
               <p>
-                My main research interest is in pushing the boundaries of <i> foundational models </i> through better <strong> evaluation frameworks </strong> or effective <strong> post-training </strong>. Recently, I am interested in:
+                Hi! I am a 1st year Graduate student at
+                <a href="https://www.yonsei.ac.kr/en_sc/">Yonsei University</a>, and a visiting researcher at
+                <a href="https://pi.snu.ac.kr/">PILAB</a>,
+                <a href="https://cse.snu.ac.kr/en">Seoul National University</a>.
+                I am fortunate to be advised by Prof.
+                <a href="https://scholar.google.com/citations?user=WDO24ZYAAAAJ&hl=ko">Youngjae Yu</a>.
               </p>
+
               <p>
-                <ul>
-                  <li> <strong> Evaluating and Mitigating Hallucinations of Language Models: </strong> Is hallucination inevitable? How can we develop truthful models and correctly evaluate them? </li>
-                  <li> <strong> Defining, Generating and Selecting High-Quality Synthetic Data: </strong> Synthetic data is key to building strong models. But how do we define <i> good </i> synthetic data? If we can, how should we select/generate them? </li>
-                </ul>
+                My main research interest is in pushing the boundaries of <i> foundational models </i> through better
+                <strong> evaluation frameworks </strong> or effective <strong> post-training </strong>.
+                Recently, I am interested in:
               </p>
+
+              <ul class="interests">
+                <li>
+                  <strong> Evaluating and Mitigating Hallucinations of Language Models: </strong>
+                  Is hallucination inevitable? How can we develop truthful models and correctly evaluate them?
+                </li>
+                <li>
+                  <strong> Defining, Generating and Selecting High-Quality Synthetic Data: </strong>
+                  Synthetic data is key to building strong models. But how do we define <i> good </i> synthetic data?
+                  If we can, how should we select/generate them?
+                </li>
+              </ul>
+
               <p>
                 I am also interested in leveraging models to evaluate or improve other models, or utilizing them to augment human capabilities.
               </p>
+
               <p>
                 I am always open to research collaborations or grabbing a cup of coffee! Please reach me via email to have a chat &#129303;
               </p>
-              <p style="text-align:center">
-                <a href="pdfs/cv-0220.pdf">CV</a> &nbsp/&nbsp
-                <a href="mailto:justin_seo@yonsei.ac.kr"> Email</a> &nbsp;/&nbsp;
+
+              <p class="links">
+                <a href="pdfs/cv-0220.pdf">CV</a> &nbsp;/&nbsp;
+                <a href="mailto:justin_seo@yonsei.ac.kr">Email</a> &nbsp;/&nbsp;
                 <a href="https://github.com/just1nseo">GitHub</a> &nbsp;/&nbsp;
                 <a href="https://scholar.google.com/citations?user=G-Tl_2YAAAAJ&hl=ko">Google Scholar</a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/wooseok-seo-aa617a22a/"> LinkedIn </a> &nbsp;/&nbsp;
-                <a href="https://x.com/just1nseo">Twitter</a> 
+                <a href="https://www.linkedin.com/in/wooseok-seo-aa617a22a/">LinkedIn</a> &nbsp;/&nbsp;
+                <a href="https://x.com/just1nseo">Twitter</a>
               </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:200px; height:250px; border-radius:50%; object-fit:cover; display:block; margin:auto;" alt="profile photo" src="images/profile.jpg">
-            </td>
-          </tr>
-        </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:0.5% 2.5%;width:100%;vertical-align:middle">
-              <h2>News</h2>
+            <td class="header-photo">
+              <img class="profile-photo"
+                   style="width:200px; height:250px; border-radius:50%; object-fit:cover;"
+                   alt="profile photo"
+                   src="images/profile.jpg">
             </td>
           </tr>
         </table>
-        <table class="news-table" style="margin-top:6px;">
-          <tbody>
-            <tr>
-              <td style="text-align:left">
-                <span class="date-badge">2026.03</span>
-                I will be joining
-                <img src="images/microsoft.png" alt="Microsoft"
-                style="height:1.3em;width:auto;vertical-align:middle;margin:0 0.25em;">
-                as a Research Intern, working on deep research agents!
-              </td>
-            </tr>
-            <tr>
-              <td style="text-align:left">
-                <span class="date-badge">2025.10</span>
-                I am attending <strong>COLM 2025</strong>! I will be at Montreal from 10/5 to 10/11, so please reach out to have a chat &#9749;
-              </td>
-            </tr>
-            <tr>
-              <td style="text-align:left">
-                <span class="date-badge">2025.09</span>
-                I will be joining
-                <img src="images/lgai.png"
-                alt="lgai"
-                style="height:1em; width:auto; vertical-align:-0.15em; margin:0 0.2em;">
-                as a Research Intern, working on foundational language models!
-              </td>
-            </tr>
-            <tr>
-              <td style="text-align:left">
-                <span class="date-badge">2025.07</span>
-                One paper on studying fact verifiers is accepted at <strong>COLM 2025</strong>!
-              </td>
-            </tr>
-            <tr>
-              <td style="text-align:left">
-                <span class="date-badge">2025.06</span>
-                One paper on video diffusion distillation via preference learning is accepted at <strong>ICCV 2025</strong>!
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <br>
+        <!-- ================================================== -->
+
+        <!-- ===================== News ===================== -->
+        <div class="section">
+          <h2>News</h2>
+          <table class="news-table">
+            <tbody>
+              <tr>
+                <td>
+                  <span class="date-badge">2026.03</span>
+                  I will be joining
+                  <img src="images/microsoft.png" alt="Microsoft" class="inline-logo">
+                  as a Research Intern, working on deep research agents!
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="date-badge">2025.10</span>
+                  I am attending <strong>COLM 2025</strong>! I will be at Montreal from 10/5 to 10/11, so please reach out to have a chat &#9749;
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="date-badge">2025.09</span>
+                  I will be joining
+                  <img src="images/lgai.png" alt="lgai" class="inline-logo">
+                  as a Research Intern, working on foundational language models!
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="date-badge">2025.07</span>
+                  One paper on studying fact verifiers is accepted at <strong>COLM 2025</strong>!
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="date-badge">2025.06</span>
+                  One paper on video diffusion distillation via preference learning is accepted at <strong>ICCV 2025</strong>!
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- =============================================== -->
+
         <!-- ===================== Research Experience ===================== -->
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:0.5% 2.5%;width:100%;vertical-align:middle;">
-              <h2>Research Experience</h2>
-            </td>
-          </tr>
-        </table>
+        <div class="section">
+          <h2>Research Experience</h2>
 
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
+          <table class="work-table">
+            <tbody>
+              <tr>
+                <td class="work-logo-cell">
+                  <img src="images/microsoft.png" alt="Microsoft" class="work-logo">
+                </td>
 
-            <!-- Microsoft -->
+                <td class="work-info">
+                  <div class="work-org">Microsoft, Copilot Team</div>
+                  <div class="work-role">Research Intern</div>
+                  <div class="work-mentor">
+                    Mentor:
+                    <a href="https://scholar.google.com/citations?user=SmqouhIAAAAJ&hl=en" target="_blank">Khanh Nguyen</a>
+                  </div>
+                </td>
+
+                <td class="work-meta">
+                  <div>Redmond, WA (Remote)</div>
+                  <div>Mar 2026 ~ Jun 2026 (Exp.)</div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="work-logo-cell">
+                  <img src="images/lgai.png" alt="LG AI Research" class="work-logo work-logo--wide">
+                </td>
+
+                <td class="work-info">
+                  <div class="work-org">LG AI Research, EXAONE Lab</div>
+                  <div class="work-role">Research Intern</div>
+                  <div class="work-mentor">
+                    Mentor:
+                    <a href="https://hongcheki.github.io/" target="_blank">Seokhee Hong</a>
+                  </div>
+                </td>
+
+                <td class="work-meta">
+                  <div>Seoul, South Korea</div>
+                  <div>Sep 2025 ~ Feb 2026</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- =========================================================== -->
+
+        <!-- ===================== Research ===================== -->
+        <div class="section">
+          <h2>Research</h2>
+
+          <table class="research-table">
+            {% for post in site.posts %}
+            {% for cat in post.categories %}
+            {% if cat == 'research' %}
             <tr>
-              <!-- Logo column (fixed width) -->
-              <td style="padding:10px 12px 10px 2.5%; width:190px; vertical-align:middle;">
-                <img src="images/microsoft.png" alt="Microsoft"
-                    style="display:block; width:170px; max-width:170px; height:auto;">
+              <td class="paper-img">
+                <img src="{{post.image}}" alt="project image" />
               </td>
 
-              <!-- Info column (flex) -->
-              <td style="padding:10px 12px; vertical-align:middle;">
-                <strong>Microsoft, Copilot Team</strong><br>
-                Research Intern<br>
-                <span style="color:#555;">
-                  Mentor: <a href="https://scholar.google.com/citations?user=SmqouhIAAAAJ&hl=en" target="_blank">Khanh Nguyen</a>
-                </span>
-              </td>
+              <td class="paper-info">
+                <h3>{{post.title}}</h3>
+                {{ post.authors }}
+                <br>
+                <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+                <br>
 
-              <!-- Meta column (fixed width + inset from right) -->
-              <td style="padding:10px 2.5% 10px 12px; width:220px; vertical-align:middle; text-align:right; white-space:nowrap;">
-                <em>Redmond, WA (Remote)</em><br>
-                <em>Mar 2026 ~ Jun 2026 (Exp.)</em>
-              </td>
-            </tr>
-
-            <!-- LG AI Research -->
-            <tr>
-              <td style="padding:10px 12px 10px 2.5%; width:190px; vertical-align:middle;">
-                <!-- LG 로고는 워낙 길어서 max-width를 더 작게 잡는 게 안전 -->
-                <img src="images/lgai.png" alt="LG AI Research"
-                    style="display:block; width:160px; max-width:160px; height:auto;">
-              </td>
-
-              <td style="padding:10px 12px; vertical-align:middle;">
-                <strong>LG AI Research, EXAONE Lab</strong><br>
-                Research Intern<br>
-                <span style="color:#555;">
-                  Mentor: <a href="https://hongcheki.github.io/" target="_blank">Seokhee Hong</a>
-                </span>
-              </td>
-
-              <td style="padding:10px 2.5% 10px 12px; width:220px; vertical-align:middle; text-align:right; white-space:nowrap;">
-                <em>Seoul, South Korea</em><br>
-                <em>Sep 2025 ~ Feb 2026</em>
-              </td>
-            </tr>
-
-          </tbody>
-        </table>
-
-        <br>
-        <!-- ============================================================= -->
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:0.5% 2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'research' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{ post.authors }}
-
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              <br>
-
-              {% if post.summary %}
-              <span class="paper-summary">{{ post.summary }}</span>
-              <br>
-              {% endif %}
-
-              {% assign links = '' | split: '' %}
-              {% if post.arxiv %}{% assign links = links | push: 'arxiv' %}{% endif %}
-              {% if post.code %}{% assign links = links | push: 'code' %}{% endif %}
-              {% if post.bibtex %}{% assign links = links | push: 'bibtex' %}{% endif %}
-              {% if post.video %}{% assign links = links | push: 'video' %}{% endif %}
-              {% if post.poster %}{% assign links = links | push: 'poster' %}{% endif %}
-              {% if post.slides %}{% assign links = links | push: 'slides' %}{% endif %}
-              {% if post.website %}{% assign links = links | push: 'website' %}{% endif %}
-              {% if post.youtube %}{% assign links = links | push: 'youtube' %}{% endif %}
-              
-              {% for link_type in links %}
-                {% if forloop.first != true %} / {% endif %}
-                
-                {% if link_type == 'arxiv' %}
-                <a href="{{post.arxiv}}">arxiv</a>
+                {% if post.summary %}
+                <span class="paper-summary">{{ post.summary }}</span>
+                <br>
                 {% endif %}
-                
-                {% if link_type == 'code' %}
-                <a href="{{post.code}}">code</a>
-                {% endif %}
-                
-                {% if link_type == 'bibtex' %}
-                <a href="{{post.bibtex}}">bibtex</a>
-                {% endif %}
-                
-                {% if link_type == 'video' %}
-                <a href="{{post.video}}">video</a>
-                {% endif %}
-                
-                {% if link_type == 'poster' %}
-                <a href="{{post.poster}}">poster</a>
-                {% endif %}
-                
-                {% if link_type == 'slides' %}
-                <a href="{{post.slides}}">slides</a>
-                {% endif %}
-                
-                {% if link_type == 'website' %}
-                <a href="{{post.website}}">website</a>
-                {% endif %}
-                
-                {% if link_type == 'youtube' %}
-                <a href="{{post.youtube}}">youtube</a>
-                {% endif %}
-              {% endfor %}
-              
-              {% if post.paper_note %}
-                {% if links.size > 0 %} / {% endif %}
-                <span>{{post.paper_note}}</span>
-              {% endif %}
-              
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:1% 2.5%;width:100%;vertical-align:middle">
-              <h2>Academic Services</h2>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:1% 2.5%;width:100%;vertical-align:middle">
-              <h3>Reviewer</h3>
-              <ul>
-                {% for service in site.data.services.reviewer %}
-                  <li>{{ service.venue }}{% if service.years %}, {{ service.years }}{% endif %}</li>
+                {% assign links = '' | split: '' %}
+                {% if post.arxiv %}{% assign links = links | push: 'arxiv' %}{% endif %}
+                {% if post.code %}{% assign links = links | push: 'code' %}{% endif %}
+                {% if post.bibtex %}{% assign links = links | push: 'bibtex' %}{% endif %}
+                {% if post.video %}{% assign links = links | push: 'video' %}{% endif %}
+                {% if post.poster %}{% assign links = links | push: 'poster' %}{% endif %}
+                {% if post.slides %}{% assign links = links | push: 'slides' %}{% endif %}
+                {% if post.website %}{% assign links = links | push: 'website' %}{% endif %}
+                {% if post.youtube %}{% assign links = links | push: 'youtube' %}{% endif %}
+
+                {% for link_type in links %}
+                  {% if forloop.first != true %} / {% endif %}
+
+                  {% if link_type == 'arxiv' %}<a href="{{post.arxiv}}">arxiv</a>{% endif %}
+                  {% if link_type == 'code' %}<a href="{{post.code}}">code</a>{% endif %}
+                  {% if link_type == 'bibtex' %}<a href="{{post.bibtex}}">bibtex</a>{% endif %}
+                  {% if link_type == 'video' %}<a href="{{post.video}}">video</a>{% endif %}
+                  {% if link_type == 'poster' %}<a href="{{post.poster}}">poster</a>{% endif %}
+                  {% if link_type == 'slides' %}<a href="{{post.slides}}">slides</a>{% endif %}
+                  {% if link_type == 'website' %}<a href="{{post.website}}">website</a>{% endif %}
+                  {% if link_type == 'youtube' %}<a href="{{post.youtube}}">youtube</a>{% endif %}
                 {% endfor %}
-              </ul>
-            </td>
-          </tr>
-        </table>
-        <br>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:0px">
-              <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron</a>
-              </p>
-            </td>
-          </tr>
-        </table>
+                {% if post.paper_note %}
+                  {% if links.size > 0 %} / {% endif %}
+                  <span>{{post.paper_note}}</span>
+                {% endif %}
+
+                <p></p>
+                {{ post.excerpt }}
+              </td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+          </table>
+        </div>
+        <!-- =============================================== -->
+
+        <!-- ===================== Academic Services ===================== -->
+        <div class="section">
+          <h2>Academic Services</h2>
+
+          <h3 class="subhead">Reviewer</h3>
+          <ul class="services">
+            {% for service in site.data.services.reviewer %}
+              <li>{{ service.venue }}{% if service.years %}, {{ service.years }}{% endif %}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <!-- =========================================================== -->
+
+        <div class="footer">
+          Design and source code from <a href="https://jonbarron.info">Jon Barron</a>
+        </div>
+
       </td>
     </tr>
   </table>
 </body>
-
 </html>

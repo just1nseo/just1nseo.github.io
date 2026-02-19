@@ -1,13 +1,20 @@
 ---
 ---
 
-//
-// IMPORTS
-//
+/* ========= Layout knobs (match clean/consistent spacing like jaehun-style) ========= */
+:root{
+  --page-max: 900px;
+  --pad-x: 20px;
+  --pad-y: 18px;
+  --section-gap: 26px;
+}
 
-//@import "reset";
-//@import "variables";
-// Syntax highlighting @import is at the bottom of this file
+*{ box-sizing: border-box; }
+
+body{
+  margin: 0;
+  padding: 0;
+}
 
 /**************/
 /* BASE RULES */
@@ -32,6 +39,11 @@ a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-display: auto;
+  line-height: 1.45;
+}
+
+p{
+  margin: 0 0 10px 0;
 }
 
 strong {
@@ -40,14 +52,21 @@ strong {
   font-display: auto;
 }
 
+h1 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 34px;
+  font-weight: normal;
+  font-display: auto;
+  text-align: center;
+  margin: 10px 0 14px 0;
+}
+
 h2 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
   font-display: auto;
   font-weight: normal;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
+  margin: 0 0 10px 0;
 }
 
 h3 {
@@ -55,67 +74,90 @@ h3 {
   font-size: 14px;
   font-weight: 700;
   font-display: auto;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
+  margin: 0;
 }
 
-h1 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: normal;
-  font-display: auto;
-  text-align: center;
-  padding: 0px;
-  margin-block-start: 14px;
-  margin-block-end: 14px;
-  margin-left: 0px;
-  margin-right: 0px;
-
+ul{
+  margin: 8px 0 12px 20px;
+  padding: 0;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
+li{
+  margin: 4px 0;
 }
 
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
-}
-
-/* News section styles */
-.news-table {
+/* ========= Page container ========= */
+.page{
   width: 100%;
-  max-width: none;
+  max-width: var(--page-max);
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin: 0 auto;
+}
+
+/* ========= Header ========= */
+.header{
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+.header td{
+  padding: var(--pad-y) var(--pad-x);
+  vertical-align: middle;
+}
+
+.header-text{
+  width: 62%;
+}
+
+.header-photo{
+  width: 38%;
+  text-align: center;
+}
+
+.profile-photo{
+  display: block;
+  margin: 0 auto;
+}
+
+/* Interests list under intro */
+ul.interests{
+  margin: 8px 0 12px 20px;
+}
+
+.links{
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ========= Sections ========= */
+.section{
+  padding: 0 var(--pad-x);
+  margin-top: var(--section-gap);
+}
+
+.subhead{
+  margin-top: 10px;
+}
+
+/* ========= News ========= */
+.news-table{
+  width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
 }
 
-.news-table td {
-  padding: 4px 0;
+.news-table td{
+  padding: 5px 0;
   vertical-align: top;
   text-align: left;
+  word-break: break-word;
 }
 
-.date-badge {
+.date-badge{
   background-color: #dddddd;
   color: #5f5d5d;
   padding: 3px 7px;
@@ -126,12 +168,129 @@ span.highlight {
   white-space: nowrap;
 }
 
-.paper-summary {
+.inline-logo{
   display: inline-block;
-  margin: 0 0 2px 0;
+  vertical-align: middle;
+  height: 1.25em;
+  width: auto;
+  margin: 0 0.25em;
 }
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-//@import "highlights";
-//@import "svg-icons";
+/* ========= Research Experience (Work table) ========= */
+.work-table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 14px;
+  table-layout: fixed;
+}
+
+.work-table td{
+  vertical-align: middle;
+}
+
+.work-logo-cell{
+  width: 170px;
+}
+
+.work-logo{
+  display: block;
+  height: 34px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+}
+
+.work-logo--wide{
+  height: 26px;
+  max-width: 160px;
+}
+
+.work-org{
+  font-weight: 700;
+}
+
+.work-role{
+  margin-top: 2px;
+}
+
+.work-mentor{
+  margin-top: 2px;
+  color: #555;
+}
+
+.work-meta{
+  width: 220px;
+  text-align: right;
+  white-space: nowrap;
+  font-style: italic;
+  color: #333;
+}
+
+.work-meta div + div{
+  margin-top: 4px;
+}
+
+/* ========= Research list ========= */
+.research-table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 16px;
+}
+
+.paper-img{
+  width: 25%;
+  min-width: 140px;
+  padding-right: 18px;
+  vertical-align: middle;
+}
+
+.paper-img img{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.paper-info{
+  width: 75%;
+  vertical-align: middle;
+}
+
+.paper-summary{
+  display: inline-block;
+  margin: 2px 0 2px 0;
+}
+
+/* ========= Services + footer ========= */
+.services{
+  margin: 8px 0 0 20px;
+}
+
+.footer{
+  padding: 22px var(--pad-x);
+  text-align: center;
+  font-size: small;
+  color: #333;
+}
+
+/* ========= Mobile: stack columns neatly ========= */
+@media (max-width: 760px){
+  .header tr,
+  .header td{
+    display: block;
+    width: 100% !important;
+  }
+  .header-photo{
+    padding-top: 0;
+  }
+
+  .work-table tr,
+  .work-table td{
+    display: block;
+    width: 100% !important;
+    text-align: left !important;
+  }
+  .work-meta{
+    margin-top: 6px;
+  }
+}
