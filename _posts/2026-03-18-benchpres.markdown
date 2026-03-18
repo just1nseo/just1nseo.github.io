@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "BenchPreS: A Benchmark for Context-Aware Personalized Preference Selectivity of Persistent-Memory LLMs"
-date:   2026-03-18 22:21:59 +00:00
+date:   2026-03-18 00:21:59 +00:00
 image: images/benchpres.png
 categories: research
 author: "Wooseok Seo"
