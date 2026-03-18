@@ -5,7 +5,7 @@ date:   2026-03-18 00:21:59 +00:00
 image: images/benchpres.png
 categories: research
 author: "Wooseok Seo"
-authors: '<a href="https://ssangyeon.github.io/">Sangyeon Yoon</a>, Sunkyoung Kim, Hyesoo Hong, Wonje Jeung, Yongil Kim, <strong>Wooseok Seo</strong>, Heuiyeen Yeen, Albert No'
+authors: '<a href="https://ssangyeon.github.io/">Sangyeon Yoon</a>, Sunkyoung Kim, Hyesoo Hong, Wonje Jeung, Yongil Kim, <strong>Wooseok Seo</strong>, Heuiyeen Yeen, <a href="https://scholar.google.com/citations?user=Kzj3HC8AAAAJ&hl=en">Albert No</a>'
 venue: "Under Review"
 summary: "We introduce BenchPreS to evaluate whether LLMs appropriately apply or suppress memory-based user preferences, showing that even frontier models systematically over-apply personalization."
 arxiv: https://arxiv.org/abs/2603.16557
