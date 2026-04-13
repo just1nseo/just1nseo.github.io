@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "EXAONE 4.5 Technical Report"
+date:   2026-04-13 00:00:00 +00:00
+image: images/exaone4-5.jpeg
+categories: research
+author: "Wooseok Seo"
+authors: 'LG AI Research'
+venue: "Technical Report"
+summary: "We present EXAONE-4.5, Korea's leading Vision-Language Model. I contribute as a member of the post-training team, specifically working on synthetic data for reasoning."
+arxiv: https://arxiv.org/abs/2604.08644
+code: https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B
+---
